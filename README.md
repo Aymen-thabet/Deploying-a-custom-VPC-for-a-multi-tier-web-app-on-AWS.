@@ -27,7 +27,7 @@ I created a target group and registered the EC2 instances.
 ![image](https://github.com/user-attachments/assets/6b799677-d593-47e9-88a1-246d2392b7fb)
 
 
-I created an Application Load Balancer assigned to the 2 public subnets in 2 different AZ
+I created an Application Load Balancer assigned to the 2 public subnets in 2 different AZ making sure the instances are HEALTHY!
 
 
 ![image](https://github.com/user-attachments/assets/27bae72a-e6f3-4903-b54f-cc2d603f18fb)
