@@ -1,4 +1,4 @@
-![Capture d'écran 2024-07-14 160032](https://github.com/user-attachments/assets/e2706f55-09f4-4cf3-ae60-844f460bb540)This mini project is made using only aws interface.
+This mini project is made using only aws interface.
 
 Description : I created a custom VPC with 4 subnets, 2 public and 2 private, and deployed a load balancer for my public subnets (automatically creating a node in each one) to assure high availability and fault tolerance, which receives public requests from the Internet and distributes the workload between both instances which are located in the private subnets. Finally, I created an auto-scaling group (in/out) assuring elasticity of the infrastracture in case of failure of an instance or heavy inbound traffic .
 
@@ -13,7 +13,7 @@ Description : I created a custom VPC with 4 subnets, 2 public and 2 private, and
 
 ![image](https://github.com/user-attachments/assets/3222d24d-494e-4cfe-9f27-63c4cd03aecb)
 
-I launched 2 EC2 instances in the private subnets with no public IP, and attached a user data script to download httpd and execute:
+I launched 2 EC2 instances in the private subnets with no public IP, and attached a user data script to download httpd to execute:
 
 echo " This is server *1* in AWS Region US-EAST-1 in AZ US-EAST-1A " > /var/www/html/index.html for server1
 
@@ -43,7 +43,7 @@ Then testing the fonctionning of the AS group
 
 ![image](https://github.com/user-attachments/assets/e90cbf23-168e-4866-a1a6-b5087b8873ed)
 
-"creating of a new instance " (working)
+"creation of a new instance " (working)
 
 FINALLY : connecting to the ALB from its public address and reloading , Notice that the server changing between the 2 AZ !. 
 
