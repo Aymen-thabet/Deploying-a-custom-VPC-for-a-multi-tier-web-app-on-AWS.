@@ -1,5 +1,8 @@
 This mini project is made using only aws interface.
 
+![image](https://github.com/user-attachments/assets/088453a3-cc15-44bd-a199-352f02d3b331)
+
+
 Description : I created a custom VPC with 4 subnets, 2 public and 2 private, and deployed a load balancer for my public subnets (automatically creating a node in each one) to assure high availability and fault tolerance, which receives public requests from the Internet and distributes the workload between both instances which are located in the private subnets. Finally, I created an auto-scaling group (in/out) assuring elasticity of the infrastracture in case of failure of an instance or heavy inbound traffic .
 
 
